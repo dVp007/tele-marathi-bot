@@ -9,7 +9,7 @@ const dinvishesh = require('dinvishesh');
 
 // telebot dependencies
 const TelegramBot = require('node-telegram-bot-api');
-const token = '681160519:AAHiD4oPeQZguSHYsjBNaGfmhWecHzp_7CI';
+const token = process.env.TOKEN;
 const bot = new TelegramBot(token,{
     polling : true
 })
